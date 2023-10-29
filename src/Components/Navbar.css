@@ -1,0 +1,41 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    background-color: orange;
+    padding: 0;
+    outline:none;
+}
+nav> h1{
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    margin-right: 200px;
+    padding: 0;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    width: 600px;
+}
+nav ul a{
+    font-size: 20px;
+    font-weight: 300px;
+    color: white;
+    text-decoration: none;
+}
+nav ul p{
+    font-size: 20px;
+    font-weight: 300px;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:hover{
+    background-color:slateblue;
+    cursor: pointer;
+    border-radius: 5px;
+
+}

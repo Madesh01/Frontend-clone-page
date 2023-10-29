@@ -1,0 +1,27 @@
+.home{
+    margin-top: 100px;
+    column-gap: 5px;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-items: center;
+    
+}
+.home input{
+    margin-bottom: 5px;
+    width: 200px;
+    padding: 10px 5px;
+    outline: none;
+     gap: 10px;
+}
+.home button{
+border: none;
+outline: none;
+background-color:orange;
+font-size: 16px;
+padding: 10px 15px;
+border-radius: 15px;
+}
+.home button:hover{
+    background-color: green;
+}

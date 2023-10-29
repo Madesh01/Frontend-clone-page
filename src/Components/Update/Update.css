@@ -1,0 +1,43 @@
+.user{
+    box-shadow: 10px 8px 15px -2px rgba(143, 139, 139,0.50);
+    background-color:wheat;
+    margin-bottom: 10px;
+    width: 500px;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+
+
+.user h2,
+.user h3{
+    color: rgba(0,0,0,0.541);
+}
+.user span{
+    font-weight: 500;
+    color: black;
+
+}
+.user_button{
+    margin: 20px;
+}
+.user_button button {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+.user_button button:hover{
+    background-color: green;
+    border-radius: 5px;
+}
+.user_update{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100px;
+    background-color:yellow;
+    border-radius: 10px;
+    color:blue;
+    cursor: pointer;
+}
