@@ -10,6 +10,10 @@ const[password,setPassword]=useState("");
  const dispatch = useDispatch();
 const navigate = useNavigate();
 const login=async()=>{
+  if(!email || !password){
+    alert("all fields are required");
+    return;
+  }
   const response = await axios.post("http://localhost:4000/users/login",{
     email,
     password,

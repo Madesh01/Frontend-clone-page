@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navbar.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeUser } from "../Pages/slices/user";
 const Navbar = () => {
@@ -8,17 +8,18 @@ const Navbar = () => {
   const user=useSelector((state)=>state.userInfo.user);
 
   const dispatch = useDispatch();
-
+let navigate = useNavigate();
   const logout=()=>{
     dispatch(removeUser());
     localStorage.removeItem("token");
+   navigate("/");
   };
   return (
     <div>
         <nav>
             <h1> Leads Management System</h1>
             <ul>
-                <Link to="/">Home</Link>
+                {/* <Link to="/">Home</Link> */}
                 <Link to="/Addleads">LeadsAdd</Link>
                 <Link to="/Leadsdata">LeadsList</Link>
                 <Link to="/Data">UpdateAdd</Link>

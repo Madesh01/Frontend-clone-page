@@ -32,6 +32,7 @@ useEffect(()=>{
         <Route path="/Updatedata" element={<Updatedata />} />
         <Route path="/Removedata"  element={<Removedata />} />
         <Route path="/data/:id"   element={<Data />} />
+
         </Route>
         <Route path="/Login" element={<Login />} />
 

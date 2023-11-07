@@ -34,3 +34,16 @@ export const handleLogin=(token)=>{
      dispatch(setUser(response.data));
     };
 };
+
+
+
+// export const handleLogin=(token)=>{
+// return async(dispatch)=>{
+//     const response = await axios.get("",{
+//         headers:{
+//             Authorization:token
+//         }
+//     });
+//    dispatch(setUser(response.data));
+// }
+// };

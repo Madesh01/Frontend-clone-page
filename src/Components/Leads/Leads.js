@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Leads.css"
-import Updatedata from '../../Pages/Update/Updatedata';
+// import Updatedata from '../../Pages/Update/Updatedata';
 const Leads = ({name,age,mobileNo,address,salesInfo}) => {
   return (
     <div className="user">

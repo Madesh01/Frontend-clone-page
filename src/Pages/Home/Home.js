@@ -1,20 +1,28 @@
 import "./Home.css";
 import { useState } from 'react';
 import axios from "axios";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
 const[name, setName]=useState("");
 const[email,setEmail]=useState("");
 const[password,setPassword]=useState("");
+let navigate = useNavigate();
 const signup=async()=>{
+  if(!name || !email|| !password){
+ alert("Required all fields");
+ return;
+}
   try {
     const response = await axios.post("http://localhost:4000/users/signup",{
     name,
     email,
     password,
   }); 
+
   console.log(response);
   alert(response.data.msg);
+  navigate("/Login");
+
   } catch (error) { 
     console.log(error)
   }
@@ -37,7 +45,7 @@ const signup=async()=>{
     value={password}
     onChange={(e)=>setPassword(e.target.value)}/>
     <br/>
-    <button onClick={signup}>SignUp</button>
+    <button onClick={signup}>SignUp</button> 
     </div>
   )
 }
