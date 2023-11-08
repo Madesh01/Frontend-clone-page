@@ -30,6 +30,7 @@ const signup=async()=>{
 
   return (
     <div className="home">
+      <h1>Sign Up </h1>
     <label>Name</label><br/>
     <input type="text"
     value={name}

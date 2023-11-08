@@ -25,6 +25,7 @@ localStorage.setItem("token",response.data);
 
   return (
     <div className="home">
+      <h1>Login</h1>
     <label>Email</label><br/>
     <input type="email"
     value={email} 

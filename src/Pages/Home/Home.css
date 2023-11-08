@@ -5,6 +5,11 @@
     text-align: center;
     height: 100vh;
     justify-items: center;
+    background-color: blueviolet;
+    width: 400px;
+    padding: 20px ;
+    border-radius: 10px;
+
     
 }
 .home input{
@@ -13,6 +18,7 @@
     padding: 10px 5px;
     outline: none;
      gap: 10px;
+     background-color: #ebdada;
 }
 .home button{
 border: none;
@@ -21,5 +27,12 @@ background-color:orange;
 font-size: 16px;
 padding: 10px 15px;
 border-radius: 15px;
-
+margin-top: 12px;
+}
+.home >label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.home input:focus{
+border: 2px solid yellow;
 }
