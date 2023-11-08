@@ -13,7 +13,7 @@ const signup=async()=>{
  return;
 }
   try {
-    const response = await axios.post("http://localhost:4000/users/signup",{
+    const response = await axios.post("https://backend-server-86us.onrender.com/users/signup",{
     name,
     email,
     password,

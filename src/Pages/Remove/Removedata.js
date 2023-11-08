@@ -8,7 +8,7 @@ const Removedata= () => {
 
   const getData = async () => {
     try {
-      const { data } = await axios.get("http://localhost:4000/leads/all", {
+      const { data } = await axios.get("https://backend-server-86us.onrender.com/leads/all", {
         headers: {
           Authorization: token
         },
@@ -25,7 +25,7 @@ const Removedata= () => {
 
   const deleteUser = async (id) => {
     try {
-      const { data } = await axios.delete(`http://localhost:4000/leads/delete/${id}`, {
+      const { data } = await axios.delete(`https://backend-server-86us.onrender.com/leads/delete/${id}`, {
         headers: {
           Authorization: token
         }

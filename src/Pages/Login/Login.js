@@ -14,7 +14,7 @@ const login=async()=>{
     alert("all fields are required");
     return;
   }
-  const response = await axios.post("http://localhost:4000/users/login",{
+  const response = await axios.post("https://backend-server-86us.onrender.com/users/login",{
     email,
     password,
   });

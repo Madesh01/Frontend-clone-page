@@ -8,7 +8,7 @@ const Updatedata= () => {
 
   const getData = async () => {
     try {
-      const { data } = await axios.get("http://localhost:4000/leads/all", {
+      const { data } = await axios.get("https://backend-server-86us.onrender.com/leads/all", {
         headers: {
           Authorization: token,
         },
@@ -25,7 +25,7 @@ const Updatedata= () => {
 
   const updateUser = async (id) => {
     try {
-      const { data } = await axios.put(`http://localhost:4000/leads/update/${id}`, {
+      const { data } = await axios.put(`https://backend-server-86us.onrender.com/leads/update/${id}`, {
         headers: {
           Authorization: token
         }

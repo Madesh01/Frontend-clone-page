@@ -10,7 +10,7 @@ const Leadsdata = () => {
 
   const getData = async () => {
     try {
-      const { data } = await axios.get("http://localhost:4000/leads/all", {
+      const { data } = await axios.get("https://backend-server-86us.onrender.com/leads/all", {
         headers: {
           Authorization: token,
         },

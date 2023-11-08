@@ -41,7 +41,7 @@ setUserInfo((currInfo)=>{
       }
       let token = localStorage.getItem("token");
 try {
-   const {data} = await axios.post("http://localhost:4000/leads/add",userInfo,{
+   const {data} = await axios.post("https://backend-server-86us.onrender.com/leads/add",userInfo,{
     headers:{
       "Authorization":token
     }

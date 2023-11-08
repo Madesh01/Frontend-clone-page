@@ -15,7 +15,7 @@ const [userInfo, setUserInfo]= useState({
   let token = localStorage.getItem("token");
   const getData = async()=>{
     try {
-      const {data} = await axios.get(`http://localhost:4000/leads/userid/${id}`,{
+      const {data} = await axios.get(`https://backend-server-86us.onrender.com/leads/userid/${id}`,{
         headers:{
           Authorization:token
         }
@@ -68,7 +68,7 @@ setUserInfo((currInfo)=>{
       }
       let token = localStorage.getItem("token");
 try {
-   const {data} = await axios.put(`http://localhost:4000/leads/update/${id} `,userInfo,{
+   const {data} = await axios.put(`https://backend-server-86us.onrender.com/leads/update/${id} `,userInfo,{
     headers:{
       "Authorization":token
     }
